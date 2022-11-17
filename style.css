@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Train+One&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ #front-cont, #front-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front, .flip-card-back {
+    width: 600px;
+    padding: 50px 30px;
+    height: 500px;
+    border-radius: 20px;
+   -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+}
+
+
+
+.flip-card-front {
+    background-color: #5D7B68 ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+  
+.flip-card-front:active{
+    transition: all 1s linear;
+    -o-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  }
+
+
+.flip-card-back {
+    background-color: #fff;
+    
+}
+.front-p, .main-header {
+    text-align: center;
+    color: #E3E3D7;
+}
+
+.front-p {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'Inter', sans-serif;
+}
+.main-header{
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+
+
+.btn-div {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #E3E3D7;
+    border: 1px solid #E3E3D7;
+    border-radius: 5px;
+    box-shadow: 3px 4px 5px 1px rgba(0,0,0,0.31);
+-webkit-box-shadow: 3px 4px 5px 1px rgba(0,0,0,0.31);
+-moz-box-shadow: 3px 4px 5px 1px rgba(0,0,0,0.31);
+    transition: all 0.4s ease;
+    
+}
+
+.main-btn:hover {
+    transform: scale(0.94);
+    background-color: #bdbda5;
+    border: 1px solid #bdbda5;
+}
+
+
+
+/* back */
+
+.flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #5D7B68;
+    margin-bottom: 10px;
+
+}
+
+.back-h2 {
+    font-family: 'Train One', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #5D7B68;
+    margin-bottom: 30px;
+}
+
+.back-h5 {
+    font-size: 15px;
+    color: #5D7B68;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center ;
+}
+
+
+
+input {
+    border: none;
+    border-bottom: 1px solid;
+    
+}
+
+/* For Chrome and Safari  */
+          
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/* For Firefox  */
+  
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.no-outline:focus {
+    outline: none;
+  }
+
+
+
+#back-right-col {
+    border-left: dashed 1px;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.monogram-img {
+    text-align: center;
+    width: 150px;
+
+}
+
+#submit-btn {
+    margin-top: 15px;
+    width: 80px;
+    height: 40px;
+    background-color: #5D7B68;
+    border: 1px solid #5D7B68;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#submit-btn:hover {
+    margin-top: 15px;
+    width: 80px;
+    height: 40px;
+    background-color: #E3E3D7;
+    border: 1px solid #E3E3D7;
+    color: #000;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (max-width:700px){
+    .flip-card-front, .flip-card-back {
+        width: 400px;
+        padding: 70px;
+        height: 550px;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px){
+    .flip-card-front, .flip-card-back {
+        width: 380px;
+        padding: 70px;
+        height: 550px;
+    }
+    
+}
+
+@media only screen and (max-width:700px){
+
+    .front-p {
+        font-size: 12px;
+        letter-spacing: 5px;
+        font-family: 'Inter', sans-serif;
+    }
+
+.main-header{
+    font-size: 32px;
+    font-family: 'Great Vibes', cursive;
+}
+
+}
+
+
+@media only screen and (min-width:700px) and (max-width:770px){
+    #back-right-col {
+        margin-top:50px;
+        border-left: none;
+        border-top: dashed 1px;
+        
+    }
+
+    .flip-card-front, .flip-card-back {
+        width: 600px;
+        padding: 70px;
+        height: 660px;
+    }
+
+    input {
+        width: 450px;
+    }
+
+    
+}
+
+@media only screen and (max-width:700px){
+    .back-h5 {
+        text-align: left;
+    }
+
+    input {
+        width: 220px;
+    }
+
+
+    .monogram-img {
+        text-align: center;
+        margin-top: 10px;
+        width: 120px;
+    
+    }
+
+    .back-h5 {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #back-right-col {
+        margin-top:50px;
+        border-left: none;
+        border-top: dashed 1px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
