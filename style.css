@@ -11,7 +11,7 @@ body {
     height: 100vh;
     width: 100%;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: initial;
 }
 
 
@@ -30,6 +30,7 @@ body {
 }
 
 .flip-card-front, .flip-card-back {
+    position: relative;
     width: 600px;
     padding: 50px 30px;
     height: 500px;
